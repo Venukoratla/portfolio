@@ -5,7 +5,6 @@ import { FaUser } from "react-icons/fa";
 import girl from "../../../images/girl.png";
 import hand from "../../../images/hand.png";
 
-
 import "./style.scss";
 
 const IntroContent = () => {
@@ -17,16 +16,20 @@ const IntroContent = () => {
                         <span className="small-text">
                             <span className="text">Hello</span>
                             <span className="icon">
-                                <img src={hand} alt="" />
+                                <img
+                                    src={hand}
+                                    alt=""
+                                />
                             </span>
                             <span className="text">, I Am</span>
                         </span>
-                        <span className="big-text">Prashanth Kumar Reddy Addula</span>
+                        <span className="big-text">Venu Koratla</span>
                     </h1>
                     <p className="title">
-                    Full Stack Development Trainee | CCBPian | Frontend Developer | React JS | Express JS | Node JS | JavaScript | HTML | CSS | Bootstrap | Python | SQL |
+                        Full Stack Developer | MySQL | Mongo DB | React JS |
+                        Express JS | Node JS | JavaScript | HTML | CSS |
+                        Bootstrap | Python
                     </p>
-                    
                 </div>
                 <div className="right-col">
                     <img
