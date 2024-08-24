@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
 
-
 import CallToAction from "../../shared/CallToAction";
 import { scrollToSection } from "../../utils/helpers";
 
@@ -19,9 +18,7 @@ const Navigation = () => {
 
     return (
         <div className="top-navigation-bar">
-            <div className="app-logo">
-               Prashanth
-            </div>
+            <div className="app-logo"></div>
             <div
                 className="mobile-menu"
                 onClick={() => setMobileMenu(!mobileMenu)}

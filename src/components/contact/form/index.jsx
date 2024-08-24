@@ -15,10 +15,10 @@ const Form = () => {
 
     const onSubmit = (data) => {
         send(
-            "service_46smyji", // Service ID
-            "template_3laxg6k", // Template ID
+            "service_ma9rbiy", // Service ID
+            "template_r1k4mh9", // Template ID
             data,
-            "yXqwug4gF_mDffJxS" // Public Key - https://dashboard.emailjs.com/admin/account
+            "EdoBr51V-WDUGJXb0" // Public Key - https://dashboard.emailjs.com/admin/account
         )
             .then((response) => {
                 console.log("SUCCESS!", response.status, response.text);
@@ -58,9 +58,9 @@ const Form = () => {
                 <div className="input-field">
                     <input
                         type="text"
-                        name="reply_to"
+                        name="from_email"
                         placeholder="Email"
-                        {...register("reply_to", {
+                        {...register("from_email", {
                             required: "Email is required",
                             pattern: {
                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -76,9 +76,9 @@ const Form = () => {
                 <div className="input-field">
                     <input
                         type="text"
-                        name="phone_number"
+                        name="phone_no"
                         placeholder="Phone"
-                        {...register("phone_number", {
+                        {...register("phone_no", {
                             required: "Phone number is required",
                             minLength: {
                                 value: 8,
